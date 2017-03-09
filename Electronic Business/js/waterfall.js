@@ -28,11 +28,11 @@ $(document).ready(function(){
 			var num = Number($(this).next('span').html());
 			num += 1;
 			$(this).next('span').html(num);
-
-			$('.box').children().find('span').find('p').click(function(){
-				window.location.href='../html/product detail.html'
-			})
 		})
+		$('.box').children().find('span').find('p').click(function(){
+			window.location.href='../html/product detail.html'
+		})
+
 	}
 	habitfun()		
 })	
