@@ -1,0 +1,62 @@
+/*product detail第三屏的样式表*/
+.imgbox{
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	-moz-transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	-o-transform:translateY(-50%);
+	width: 1335px;
+	height: 500px;
+	overflow: hidden;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 900;
+}
+
+.imgbox img{
+	height: 480px;
+	margin: 0;
+}
+
+.imgbox span{
+	position: absolute;
+	overflow: hidden;
+	width: 300px;
+	height: 50px;
+}
+
+.imgbox img{
+	position: relative;
+}
+
+.imgbox img:nth-child(1),.imgbox img:nth-child(3){
+	top: 500px;
+}
+
+.imgbox img:nth-child(2),.imgbox img:nth-child(4){
+	bottom: 500px;
+}
+
+#boxtext1{
+	bottom: 30px;
+	right: 40px;
+}
+
+#boxtext2{
+	bottom: 90px;
+	right: 140px;
+}
+
+#boxtext3{
+	top: 30px;
+	right: 70px;
+}
+
+.imgbox span i{
+	color: #ff3232;
+	position: relative;
+	top: 50px;
+}

@@ -1,0 +1,58 @@
+/*home paage main.css*/
+main{
+	text-align: center;
+}
+
+.carousel{
+	width: 100%;
+	min-width: 500px;
+	height: 450px;
+	text-align: center;
+	position: absolute;
+	top: 150px;
+	z-index: 0;
+}
+
+.part1{
+	width: 100%;
+	background-color: #ff2f5a;
+}
+
+.part2{
+	width: 100%;
+	background-color: #74bedc;
+	display: none;
+}
+
+.part3{
+	width: 100%;
+	background-color: #edeff4;
+	display: none;
+}
+
+.carousel img{
+	width: 1000px;
+	height: 450px;
+}
+
+#leader{
+	height: 20px;
+	width: 100px;
+	margin: 420px auto 0 auto;
+}
+
+#leader span{
+	display: inline-block;
+	background-color: white;
+	opacity: 0.4;
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+#leader span:nth-child(1){
+	opacity: 0.8;
+}
+/*轮播器导航的动态*/

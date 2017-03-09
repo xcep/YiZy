@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>myself</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			color: #6d6d6d;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="../style/myself.css">
+
+	<script type="text/javascript" src='../js/jquery-1.8.3.min.js'></script>
+
+	<script type="text/javascript" src='../js/myself.js'></script>
+
+	<script type="text/javascript" src='../angularjs/angular.js'></script>
+</head>
+<header>
+	<div class="my_head">
+		<a href="home page.html"><img src="../img/YiZy.jpg"></a><span class="homepage" id="head_on">购物车</span><span class="shopping">个人设置</span><span class="meeage">消息</span>
+	</div>
+</header>
+<main>
+<div class="center">
+	<div class="cen">
+	<div id="me">
+		<img src="../img/A.jpg">
+		<span>交易完成</span>
+		<span>已购买</span>
+		<span>收藏夹</span>
+		<hr>
+	</div>
+	<table ng-app="" ng-init="names=[
+	{img:'../img/thumbnail1.jpg',introduction:'blablablablablabla',price:'130'},
+	{img:'../img/thumbnail2.jpg',introduction:'blablabla',price:'170'},
+	{img:'../img/thumbnail3.jpg',introduction:'blablablablabla',price:'240'}
+	]">
+	<tr>
+		<th></th><th>图示</th><th>简介</th><th>单价</th><th>数量</th><th>小计</th><th></th>	
+	</tr>
+	<tr ng-repeat="x in names">
+		<td id="check"><input type="checkbox"></td>
+		<td><img src="{{x.img}}"></td>
+		<td>{{x.introduction}}</td>
+		<td>{{x.price}}</td>
+		<td><span class="add">+</span><span>1</span><span class="minus">-</span></td>
+		<td>{{x.price}}</td>
+		<td><span>删除</span></td>
+	</tr>
+	</table>
+	</div>
+</div>
+<div class="left">
+</div>
+<div class="right">
+	
+</div>
+</main>
+</html>

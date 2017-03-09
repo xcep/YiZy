@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>product detail</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			color: #6d6d6d;
+		}
+
+		a{
+			text-decoration: none;
+		}
+
+		html{
+			background-color: #e5e9fe;
+			font-size: 16px;
+		}
+
+		header{
+			background-color: white
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="../style/jquery.fullPage.css">
+
+	<link rel="stylesheet" type="text/css" href="../style/product detail1.css">
+	<!--商品详情页section1的样式表-->
+
+	<link rel="stylesheet" type="text/css" href="../style/product detail2.css">
+	<!--宝贝详情页样式表-->
+
+	<link rel="stylesheet" type="text/css" href="../style/product detail3.css">
+	<!--全屏图片的样式表-->
+
+	<link rel="stylesheet" type="text/css" href="../style/header.css">
+	<!--home page顶部的css，包括登陆注册栏和logo、搜索栏-->
+
+	<link rel="stylesheet" type="text/css" href="../style/reg&log.css">
+
+	<script type="text/javascript" src='../js/jquery-1.8.3.min.js'></script>
+
+	<script src="../js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$('#dowebok').fullpage({
+			loopBottom: true,
+			resize: false,
+			afterLoad: function(anchorLink,index){
+				if (index == 3) {
+					$('.imgbox').children('img').animate({top:'0'},1000);
+					$('#boxtext1').children('i').delay(500).animate({top:'0'},1000);
+					$('#boxtext2').children('i').delay(1000).animate({top:'0'},1000);
+					$('#boxtext3').children('i').delay(1500).animate({top:'0'},1000);
+				}
+			}
+	});})
+	</script>
+	
+	<script type="text/javascript" src='../reactjs/react.js'></script>
+
+	<script type="text/javascript" src='../reactjs/react-dom.js'></script>
+	
+	<script type="text/javascript" src='../reactjs/browser.min.js'></script>
+
+	<script type="text/javascript" src='../js/reg&log.js'></script>	
+	<!--登陆注册框的外部文件-->
+
+	<script type="text/javascript" src='../js/product detail.js'></script>
+
+</head>
+<body>		
+<div id="dowebok">
+	<div class="section">	
+		<p class="out"></p>
+		<div id="shop">
+			<div id="name">
+				<span>
+					<img src="../img/shop name.jpg">
+				</span>
+				<span>
+					<p>ABCD旗舰店</p>
+					<p><img src="../img/star.jpg"><img src="../img/star.jpg"><img src="../img/star.jpg"><img src="../img/star.jpg"></p>	
+					<p>价格：<strong>4.73</strong>  质量：<strong>4.28</strong> 服务：<strong>4.98</strong></p>
+				</span>
+				<span>
+					<p>收藏</p>
+					<p>私聊</p>
+				</span>
+				<span class="menu">
+				<p><span>商品数：</span>159</p>
+				<p><span>销量：</span>1352</p>
+				<p><span>开店时间：</span>2015年2月4日</p>
+				<p><span>店铺地址：</span>广州</p>
+				<p><span>店铺认证：</span>实名认证</p>
+				</span>
+			</div>
+			<div class="classification">
+				<span><abbr title="女装"><img src="../img/girl.jpg"></abbr></span>
+				<span><abbr title="帽子"><img src="../img/hat.jpg"></abbr></span>
+				<span><abbr title="包包"><img src="../img/package.jpg"></abbr></span>
+				<span><abbr title="香水"><img src="../img/perfume.jpg"></abbr></span>
+				<span><abbr title="化妆品"><img src="../img/cosmetics.jpg"></abbr></span>
+			</div>
+		</div>
+		<div class="detail">
+			<span class="d_img">
+				<img src="../img/detail1.jpg">
+				<img src="../img/detail2.jpg">
+				<img src="../img/detail3.jpg">
+				<span id="thumbnail">
+					<img src="../img/thumbnail1.jpg" class="imgon">
+					<img src="../img/thumbnail2.jpg">
+					<img src="../img/thumbnail3.jpg">
+				</span>
+			</span>
+			<span class="d_detail">
+				<p>秋冬韩版针织开衫毛衣</p>
+				<span id="price">
+					<p>价格：<s>￥146.00</s></p>
+					<p>
+					价格：<strong>￥99.90</strong>
+					<span>19<br>评论</span>
+					<span style="border: none;">125<br>交易成功</span>
+					</p>
+					<p>
+					店铺优惠：满减<img src="../img/drop-down.jpg">
+					<span id="drop">
+						满200元立减30元<br>
+						满300元立减50元<br>
+						满500元立减100元
+					</span>
+					</p>	
+				</span>
+				<p id="color">颜色：<span id="on">白色</span></p>
+				<p id="size">大小：<span id="on">S</span><span>M</span><span>L</span>
+				<p id="number">
+				数量：<span>+</span><span id="numbertext">1</span><span>-</span><i>（库存169件）</i>
+				</p>
+				<input type="button" class="buy" value="立即购买">
+				<input type="button" class="collect" value="收藏">
+			</span>
+			<span class="commend">
+				掌柜推荐<img src="../img/clothes1.png"><img src="../img/clothes2.png">
+			</span>
+		</div>
+	</div>
+	<div class="section">
+		<div class="page2">
+		<span class="bb_left">
+			<span><img src="../img/ABCD.jpg"></span>
+		<p>ABCD旗舰店</p>
+		<p>客服在线时间<br>8:00~22:00</p>
+		客服
+		<span id="staff">
+			<img src="../img/A.jpg">
+			<img src="../img/B.jpg">
+			<img src="../img/C.jpg">
+ 			<img src="../img/E.jpg">
+		</span>
+		</span>
+		<span class="bb_detail">
+			<p><span id="bb_on">宝贝详情</span><span>累计评论</span></p>
+			<div id="information">
+				<span>颜色：白间黑（详图片）</span>
+				<span>材质：棉</span>
+				<span>品牌：other/其他</span>
+				<span>适用场景：休闲</span>
+				<span>适用对象：青年</span>
+				<span>适用季节: 四季</span>	
+				<span>洗水工艺：手洗</span>
+				<span>厚薄：常规</span>
+				<span>工艺处理: 猫须 破洞 免烫处理</span>
+				<span><img src="../img/detail1.jpg"></span>
+				<span><img src="../img/detail2.jpg"></span>
+				<span><img src="../img/detail3.jpg"></span>
+			</div>
+			<div id="comment">
+			<textarea class="text" autocomplete="off"></textarea>
+			<div id="react1"></div>
+			<div id="comments"></div>
+			</div>
+		</span>
+		</div>
+	</div>
+	<div class="section">
+		<div class="imgbox">	
+			<img src="../img/detail1.jpg">
+			<img src="../img/detail2.jpg">
+			<img src="../img/detail4.jpg">
+			<img src="../img/detail3.jpg">
+			<span id="boxtext1"><i>全国包邮</i>
+			</span>
+			<span id="boxtext2"><i>7天包退</i></span>
+			<span id="boxtext3"><i>48小时内发货</i></span>
+		</div>		
+	</div>
+</div>
+<script type="text/babel">
+	var styles ={
+		cv: {
+		height: '50px',
+		width: '600px',
+		'borderTop': 'solid 1px #e2e2e2',
+		'borderBottom': 'solid 1px #e2e2e2',
+		margin: '10px 0'	
+		},
+
+		rb: {
+		width: '80px',
+		height: '35px',
+		margin: '10px 0',
+		'backgroundColor': '#9cc2dc',
+		color: 'white',
+		'fontSize': '18px',
+		'borderRadius': '3px',
+		cursor: 'pointer'
+		}
+	};	
+	var once = 0;
+	var Comment = React.createClass({
+		getInitialState:function(){
+			return{
+				text : ''
+			};
+		},
+
+		handleClick:function(){	
+			var abc = $('.text').val(),
+				bcd = '我：' + abc;
+			if(once == 0){
+				if (abc != ''){
+					this.setState({
+						text : bcd
+					})
+					alert('评论成功');
+					once +=1
+			}else{
+				alert('请输入评论')
+			}}else{
+				alert('你已经评论过了')
+			}
+		},
+
+	render:function(){
+		return(
+		<div>
+			<button onClick={this.handleClick} style={styles.rb}>提交</button>
+			<p style={styles.cv}>{this.state.text}</p>
+		</div>
+		);
+	}})
+
+	ReactDOM.render(
+		<Comment />,
+		document.getElementById('react1')
+	)
+</script>
+<script type="text/babel">
+	var styles ={
+		co: {
+		height: '50px',
+		width: '600px',
+		'borderBottom': 'solid 1px #e2e2e2',
+		color: 'black',
+		'fontSize': '18px'
+		}
+	};
+
+	var comments = ['A:blablabla','B:blablablablab','C:blabla','D:blablablablablabla',
+	'S:blablablablablablablablablabla'];
+	
+	ReactDOM.render(
+		<div>
+		{
+		comments.map(function (comment){
+			return	<p style={styles.co}>{comment}</p>
+		})
+		}
+		</div>,
+
+	document.getElementById('comments')
+	);
+</script>
+</body>
+</html>

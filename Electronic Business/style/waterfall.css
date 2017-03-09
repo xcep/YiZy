@@ -1,0 +1,161 @@
+/*瀑布流样式表*/
+.box{
+	display: flex;
+	flex-direction: row;		
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	width: 1000px;
+	justify-content: space-between;
+	margin: auto;
+	margin-top: 60px;
+	margin-bottom: 100px;
+}
+/*盒子样式*/
+.colum>span{
+	position: relative;
+	overflow: hidden;
+	border: solid #aaaaaa 1px;
+	cursor: pointer;
+}
+
+.colum>span:hover{
+	border-color: #ff6000	
+}
+
+.colum{
+	width: 250px;
+	justify-content: space-between;		
+}
+/*列样式*/
+
+.item{
+	display: inline-block;
+	width: 230px;
+	height: 300px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+}
+/*子元素1的样式*/
+
+.item2{
+	display: inline-block;
+	width: 230px;
+	height: 200px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+}		
+/*子元素2的样式*/
+
+.item3{
+	display: inline-block;
+	width: 230px;
+	height: 250px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+}		
+/*子元素3的样式*/
+
+.lie1 .item,.lie4 .item,.lie5 .item{
+	background-image: url(../img/clothes1.png)	
+}
+
+.lie1 .item2,.lie5 .item2{
+	background-image: url(../img/other7.png)	
+}
+
+.lie2 .item2,.lie4 .item2{
+	background-image: url(../img/other1.png)
+}
+
+.lie1 .item3,.lie2 .item3,.lie5 .item3{
+	background-image: url(../img/other5.png)
+}
+
+.lie2 .item{
+	background-image: url(../img/other2.png)
+}
+
+.lie3 .item{
+	background-image: url(../img/clothes2.png)	
+}
+
+.lie3 .item2{
+	background-image: url(../img/other3.png)	
+}
+
+.lie3 .item3{
+	background-image: url(../img/other6.png)
+}
+
+.lie4 .item3{
+	background-image: url(../img/other6.png)
+}
+
+.lie5{
+	display: none;
+}
+
+@media screen and (min-width:1500px){
+	.lie5{
+		display: block;
+	}	
+}
+
+@media screen and (max-width:1000px){
+	.lie4{
+		display: none;
+	}	
+	.box{
+		width: 700px;
+	}
+}
+
+@media screen and (max-width:750px){
+	.lie3{
+		display: none;
+	}	
+	.box{
+		width: 500px;
+	}
+}
+
+.habit{
+	position: relative;
+	top: 0;
+	left: 60px;
+}
+
+.habit span,.habit a{
+	margin-right: 3px;
+}
+
+.habit span:nth-child(2){
+	margin-right: 10px;
+}
+
+.habit a{
+	font-size: 20px;
+}
+
+.colum>span>p{
+	background-color: black;
+	position: absolute;
+	bottom: -40px;
+	height: 30px;
+	width: 100%;
+	transition: bottom 0.5s;
+	opacity: 0.6;
+	color: white;
+	padding-top: 10px;
+	z-index: 1;
+}
+
+.colum>span:hover>p{
+	bottom: 0;
+}
+
+.colum>p{
+	position: relative;
+	z-index: 1;
+	height: 0px;
+}

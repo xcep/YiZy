@@ -1,0 +1,171 @@
+/*个人中心样式表*/
+header{
+	width: 100%;
+	height: 50px;
+	background-color: #fc8132;
+}
+
+.my_head{
+	width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+.my_head img{
+	float: left;
+	margin-right: 100px;
+}
+
+.my_head span{
+	display: inline-block;
+	width: 100px;
+	height: 48px;	
+	line-height: 48px;
+	color: white;
+	font-size: 20px;
+	font-weight: 900;
+	text-align: center;
+	cursor: pointer;
+	border-top: solid #fc8132 2px;
+}
+
+.my_head span:nth-child(3){
+	border-right: solid #f4f4f4 1px;
+	border-left: solid #f4f4f4 1px;  
+}
+
+#head_on{
+	background-color: white;
+	color: #fc8132;
+}
+
+main{
+	margin-top: 40px;
+}
+
+.center{
+	width: 800px;
+	margin: 0 auto;
+	padding: 0 50px;
+	border-right: solid #ebebeb 1px;
+	border-left: solid #ebebeb 1px;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.cen{
+	border: solid #dadada 1px;
+	width: 800px;
+}
+
+#me{
+	width: 800px;
+	height: 60px;
+	background-color: #dbf2ff;
+	line-height: 60px;
+	margin-bottom: 20px;
+}
+
+#me img{
+	margin: 5px 10px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+}
+
+#me span{
+	display: inline-block;
+	margin-top: 15px;
+	line-height: 30px;
+	width: 116px;
+	height: 30px;
+	float: right;
+	font-size: 18px;
+	text-align: center;
+	cursor: pointer;
+	border-right: solid transparent 2px; 
+	border-left: solid transparent 2px; 
+}
+
+#me span:hover{
+	border-right: solid white 2px; 
+	border-left: solid white 2px; 
+}
+
+hr{
+	position: relative;
+	top: -25px;
+	left: 475px;/*+120*/
+	width: 50px;
+	height: 3px;
+	background-color:#363fff;
+}
+
+td,th,tr,table{
+	border: solid #818181 1px;
+	border-collapse: collapse;
+	height: 80px;
+	text-align: center;
+}
+
+td:nth-child(1){
+	width: 30px;
+}
+
+td:nth-child(2){
+	width: 80px;
+}
+
+td:nth-child(3){
+	width: 400px;
+}
+
+td:nth-child(4){
+	width: 80px;
+}
+
+td:nth-child(5){
+	width: 100px;
+}
+
+td:nth-child(5) span:nth-child(1),td:nth-child(5) span:nth-child(3){
+	display: inline-block;
+	margin: 0 10px;
+	line-height: 30px;
+	height: 30px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+td:nth-child(5) span:nth-child(2){
+	display: inline-block;
+	width: 25px;
+}
+
+td:nth-child(6){
+	width: 80px;
+}
+
+td:nth-child(7){
+	width: 50px;
+}
+
+td:nth-child(7) span{
+	cursor: pointer;
+}
+
+td:nth-child(7) span:hover{
+	color: red;
+}
+
+tr:nth-child(1),th{
+	height: 35px;
+}
+
+

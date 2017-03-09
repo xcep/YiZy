@@ -1,0 +1,310 @@
+/*商品详情页section1的样式表*/
+#shop{
+	width: 100%;
+	max-width: 1500px;
+	min-width: 1000px;
+	margin: 10px auto;
+	height: 60px;
+	padding-left: 40px;
+	border-bottom: solid #c4c4c4 1px;
+	padding-bottom: 10px;
+}
+
+#name{
+	width: 350px;
+	height: 60px;
+	position: relative;
+	top: -10px;
+	font-size: 14px;
+	display: inline-block;
+}
+
+#name>span:nth-child(1){
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	overflow: hidden;
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+}/*店铺图标*/
+
+#name span:nth-child(2) p:nth-child(1){
+	padding-top: 7px;
+	cursor: pointer;
+}/*店铺名ABCD*/
+
+#name span:nth-child(2) p:nth-child(1):hover{
+	color: #dd0000;	
+}
+
+#name span p strong{
+	font-size: 14px;
+	margin-right: 5px;
+	color: #ff0c0c;
+}/*店铺分数*/
+
+#name span:nth-child(2){
+	float: left;
+}/*店铺名、评价板块*/
+
+#name span:nth-child(3){
+	float: right;
+	margin-top: 15px;
+}/*收藏、私聊板块*/
+
+#name span:nth-child(3) p{
+	height: 25px;
+	cursor: pointer;
+}/*收藏、私聊*/
+
+#name span:nth-child(3) p:hover{
+	color: #dd0000;
+}
+
+.menu{
+	display: inline-block;
+	width: 200px;
+	left: 40px;
+	position: absolute;
+	top: 69px;
+	border: solid #c4c4c4 1px;
+	background-color: #ededed;
+	display: none;
+	z-index: 1;
+}/*店铺详情板块*/
+
+.menu p span{
+	width: 80px;
+	height: 25px;
+	display: inline-block;
+	text-align: right;
+	margin-top: 7px;
+}
+
+#name:hover .menu{
+	display: inline-block;
+}
+
+.classification{
+	display: inline-block;
+	position: relative;
+	left: 300px;
+}/*分类图标板块*/
+
+.classification img{
+	cursor: pointer;
+	position: absolute;
+}/*分类图标*/
+
+.classification img:hover{
+	width: 70px;
+}
+
+.classification span{
+	width: 70px;
+	height: 70px;
+	display: inline-block;
+	text-align: center;
+}
+
+.detail{
+	width: 1100px;
+	margin: 10px auto;
+}/*商品详情*/
+
+.d_img{
+	width: 267px;
+	height: 490px;
+	display: inline-block;
+	border: solid #ababab 1px;
+	cursor: pointer;
+	position: relative;
+	float: left;
+}/*商品大图板块*/
+
+.d_img>img{
+	position: absolute;
+	display: none
+}
+
+.d_img>img:nth-child(1){
+	display: inline-block;
+}
+
+#thumbnail{
+	position: absolute;
+	bottom: 0;
+	left: 14px;
+	margin: auto;
+}/*缩略图*/
+
+#thumbnail img{
+	margin: auto 5px;
+	opacity: 0.4;
+	border-bottom: solid transparent 3px;
+}
+
+.detail .d_img #thumbnail .imgon{
+	opacity: 1;
+	border-color: #ff6600
+}
+
+.d_detail{
+	margin-left: 50px;
+	margin-top: 30px;
+	display: inline-block;
+}/*商品信息*/
+
+.d_detail>p:nth-child(1){
+	font-size: 25px;
+	color: black;
+	font-weight: 900;
+}/*商品名字*/
+
+#price{
+	margin-top: 20px;
+	width: 500px;
+	height: 120px;
+	background-color: #e3e3e3;
+	display: inline-block;
+	padding-left: 15px; 	
+}/*商品价格板块*/
+
+#price>p{
+	margin-top: 10px;
+}/*价格*/
+
+#price p strong{
+	font-size: 25px;
+	color: #e30000;
+	margin-left: 20px;
+}
+
+s{
+	margin-left: 20px;
+}/*原价格*/
+
+.d_detail span p span{
+	width: 70px;
+	height: 50px;
+	text-align: center;
+	display: inline-block;
+	float: right;
+	border-left: solid #d8d8d8 2px;
+	padding: 0 3px;
+}/*评论、交易*/
+
+#price p:nth-child(3){
+	margin-top: 10px;
+	font-size: 14px;
+	cursor: pointer;
+	position: relative;
+	width: 120px;
+}/*优惠板块*/
+
+.d_detail>span>p>img{
+	margin-left: 5px;
+}/*优惠下拉图标*/
+
+.d_detail #drop{
+	text-align: left;
+	width: 150px;
+	height: 80px;
+	background-color: #e5e9fe;
+	padding-left: 15px;
+	margin-top: 13px;
+	font-size: 14px;
+	line-height: 25px;
+	border: solid #b9b9b9 1px;
+	display: none;
+	position: absolute;
+	top: 18px;
+	left: 0
+}/*优惠信息*/
+
+#price>p:nth-child(3):hover>#drop{
+	display: inline-block;
+}
+
+#color,#size,#number{
+	margin-left: 20px;
+}/*颜色、大小、数量板块*/
+
+.d_detail>p span{
+	display: inline-block;
+	margin-top: 15px;
+	width: 50px;
+	height: 20px;
+	background-color: white;
+	text-align: center;
+	border: solid #b9b9b9 2px;
+	cursor: pointer;
+	margin-left: 20px;
+}/*颜色*/
+
+#size span{
+	width: 25px;
+}/*大小选择*/
+
+#on{
+	border: solid #ff8a00 2px;	
+}
+
+#number span{
+	width: 20px;
+	margin-left: 5px;
+}/*增加减少按钮*/
+
+#number span:nth-child(1){
+	margin-left: 20px;
+}
+
+#number #numbertext{
+	width: 40px;
+}/*数量值*/
+
+#number i{
+	font-size: 14px;
+}
+
+.buy,.collect{
+	width: 100px;
+	height: 35px;
+	margin-top: 20px;
+	cursor: pointer;
+	font-size: 16px;
+	border: solid #cccccc 2px;	
+	font-weight: 900;
+	background-color: #ff884e;	
+	color: white;
+}/*购买收藏按钮*/
+
+.buy{	
+	margin-left: 100px;
+}/*购买按钮*/
+
+.collect{
+	margin-left: 20px;
+}/*收藏按钮*/
+
+.buy:hover,.collect:hover{
+	border-color: #ff4e00;
+}
+ 
+.commend{
+	display: inline-block;
+	width: 150px;
+	margin-top: 30px;
+	float: right;
+	border-left: solid #d7d7d7 2px;
+	padding-left: 20px;
+	text-align: center;
+}
+
+.commend img{
+	margin-top: 10px;
+	width: 150px;
+	cursor: pointer;
+}
+

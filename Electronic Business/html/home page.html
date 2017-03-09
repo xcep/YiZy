@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home page</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			color: #6d6d6d;
+		}
+
+		a{
+			text-decoration: none;
+		}
+
+		html{
+			background-color: #e5e9fe
+		}
+
+		header{
+			background-color: white
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="../style/header.css">
+	<!--home page顶部的css，包括登陆注册栏和logo、搜索栏-->
+	<link rel="stylesheet" type="text/css" href="../style/carousel.css">
+	<!--home page主体的css，包括轮播器的css，不包括瀑布流的css-->
+	<link rel="stylesheet" type="text/css" href="../style/waterfall.css">
+	<!--瀑布流的css-->
+
+	<link rel="stylesheet" type="text/css" href="../style/reg&log.css">
+
+	<script type="text/javascript" src='../js/jquery.min.js'></script>	
+
+	<script type="text/javascript" src='../js/carousel.js'></script>
+	<!--轮播器的js-->
+
+	<script type="text/javascript" src='../js/waterfall.js'></script>
+
+	<script type="text/javascript" src='../js/reg&log.js'></script>
+</head>
+<header>
+<p class="out"></p>
+<!--顶部登陆注册栏外部引入-->
+
+<div class="navigation">
+	<img src="../img/logo.jpg">
+	<div class="search">
+		<input type="text" placeholder="男装"><button>搜索</button>
+		<p><a>服装</a><a>书籍</a><a>其他</a></p>
+	</div>
+</div>	
+<!--搜索框及logo-->
+</header>
+<main>
+	<div class="carousel part1">	
+		<img src="../img/carousel1.png">
+	</div>
+	<div class="carousel part2">
+		<img src="../img/carousel2.png">
+	</div>
+	<div class="carousel part3">
+		<img src="../img/carousel3.png">
+	</div>
+	<!--轮播器三个场景-->
+
+	<div id="leader">
+		<span></span><span></span><span></span>
+	</div>
+	<!--导航器-->
+
+	<div class="box">
+		<div class="colum lie1">
+			<span class="item" style="background-image: url(../img/clothes1.png)"></span>
+			<span class="item2" style="background-image: url(../img/other3.png)"></span>
+			<span class="item3" style="background-image: url(../img/book1.png)"></span>
+			<span class="item2" style="background-image: url(../img/other1.png)"></span>
+		</div>
+		<div class="colum lie2">
+			<span class="item2" style="background-image: url(../img/other4.png)"></span>
+			<span class="item" style="background-image: url(../img/other2.png)"></span>
+			<span class="item2" style="background-image: url(../img/other7.png)"></span>
+			<span class="item3" style="background-image: url(../img/other5.png)"></span>		
+		</div>
+		<div class="colum lie3">
+			<span class="item2" style="background-image: url(../img/other1.png)"></span>
+			<span class="item" style="background-image: url(../img/clothes2.png)"></span>
+			<span class="item3" style="background-image: url(../img/other6.png)"></span>
+			<span class="item2" style="background-image: url(../img/other3.png)"></span>
+		</div>
+		<div class="colum lie4">
+			<span class="item2" style="background-image: url(../img/other3.png)"></span>
+			<span class="item3" style="background-image: url(../img/other5.png)"></span>
+			<span class="item2" style="background-image: url(../img/other4.png)"></span>
+			<span class="item" style="background-image: url(../img/book2.png)"></span>
+		</div>
+		<div class="colum lie5">
+			<span class="item" style="background-image: url(../img/clothes1.png)"></span>
+			<span class="item2" style="background-image: url(../img/other1.png)"></span>
+			<span class="item3" style="background-image: url(../img/book1.png)"></span>
+			<span class="item2" style="background-image: url(../img/other3.png)"></span>
+		</div>
+	</div>
+	<!--瀑布流体-->
+</main>
+</html>
